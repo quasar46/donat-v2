@@ -1,0 +1,65 @@
+doctype html
+html(lang="ru")
+    include modules/head
+    body
+        .wrapper
+            include modules/header
+            .page._container
+                .content 
+                    .content__header 
+                        h2.content__title Donut brew bar
+                    .content__tabs.tabs
+                        a.tabs__item.active(href="/") Курск
+                        a.tabs__item(href="bar-belgorod.html") Белгород
+                    .content__wrapper.int 
+                        .int__item 
+                            figure 
+                                img.int__pic(src="img/int/1.jpg" alt="")
+                                .int__overlay
+                                    a(href="")  3D ТУР
+                                    a(href="")  МЕНЮ
+                            span.int__name УЛ. ЛЕНИНА 20
+                        .int__item 
+                            figure
+                                img.int__pic(src="img/int/2.jpg" alt="")
+                                .int__overlay
+                                    a(href="")  3D ТУР
+                                    a(href="")  МЕНЮ
+                            span.int__name УЛ. ЛЕНИНА 94
+                        .int__item 
+                            figure
+                                img.int__pic(src="img/int/3.jpg" alt="")
+                                .int__overlay
+                                    a(href="")  3D ТУР
+                                    a(href="")  МЕНЮ
+                            span.int__name УЛ. ЛЕНИНА 27 
+                        .int__item 
+                            figure
+                                img.int__pic(src="img/int/4.jpg" alt="")
+                                .int__overlay
+                                    a(href="")  3D ТУР
+                                    a(href="")  МЕНЮ
+                            span.int__name УЛ. РАДИЩЕВА 58 
+                        .int__item 
+                            figure
+                                img.int__pic(src="img/int/5.jpg" alt="")
+                                .int__overlay
+                                    a(href="")  3D ТУР
+                                    a(href="")  МЕНЮ
+                            span.int__name УЛ. К.МАРКСА 23А
+                        .int__item 
+                            figure
+                                img.int__pic(src="img/int/6.jpg" alt="")
+                                .int__overlay
+                                    a(href="")  3D ТУР
+                                    a(href="")  МЕНЮ
+                            span.int__name УЛ. К.МАРКСА 6
+
+
+
+
+
+
+
+    include modules/footer
+    include modules/script

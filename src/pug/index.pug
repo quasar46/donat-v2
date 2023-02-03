@@ -1,0 +1,22 @@
+doctype html
+html(lang="ru")
+    include modules/head
+    body
+        .wrapper
+            include modules/header
+            .page.index-page
+                .intro
+                    .intro__media 
+                        video(src="intro.mp4" autoplay muted loop) 
+                    .main-wrapper 
+                        h1.main-wrapper__title DONUT BREW®
+                        .main-wrpper__subtitle сеть профессиональных кофе <br> баров  с собственным <br> обжарочным цехом
+                        .main-wrapper__btns 
+                            a.btn-default(href="bar-kursk.html") Donut brew bar
+                            a.btn-default(href="#") Donut brew roasters
+                        .main-wrapper__btns.main-wrapper__btns--mobile
+                            a.btn-default(href="bar-kursk.html") Bar
+                            a.btn-default(href="#") Roasters
+
+    include modules/footer
+    include modules/script

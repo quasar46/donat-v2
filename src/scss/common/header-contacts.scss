@@ -1,0 +1,32 @@
+.header-contacts {
+    display: flex;
+    gap: 70px;
+
+    @media (max-width: 1919px) {
+        flex-direction: column;
+        gap: 15px;
+        align-items: flex-end;
+    }
+
+    @media (max-width: 1365px) {
+        gap: 22px;
+        margin-left: auto;
+        flex-direction: row;
+    }
+}
+
+.header-contacts__link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    span {
+        @media (max-width: 1365px) {
+            display: none;
+        }
+    }
+
+    &:hover {
+        text-decoration: underline;
+    }
+}

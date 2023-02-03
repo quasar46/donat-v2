@@ -1,0 +1,133 @@
+.int {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    @media (max-width: 1919px) {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    @media (max-width: 1023px) {
+        grid-template-columns: 1fr;
+    }
+
+    .int__overlay {
+        @media (max-width: 1023px) {
+            opacity: 1;
+            height: 47px;
+            width: 100%;
+            top: auto;
+            bottom: 0;
+            justify-content: space-between;
+
+            a {
+                display: block;
+                border: none;
+                // pointer-events: none;
+            }
+        }
+
+        @media (max-width: 767px) {
+            a {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.int__item {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    figure {
+        position: relative;
+    }
+
+    &:hover {
+        .int__overlay {
+            // display: flex;
+            opacity: 1;
+            transition: all 0.3s ease;
+
+            a {
+                // display: block;
+                opacity: 1;
+            }
+        }
+    }
+
+    @media (max-width: 1023px) {
+        gap: 12px;
+    }
+}
+
+.int__overlay {
+    // display: none;
+    opacity: 0;
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.5)), url(image.png);
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    // transition: all 0.3s ease;
+
+    a {
+        // display: none;
+        opacity: 0;
+        font-size: 16px;
+        font-weight: 500;
+        text-transform: uppercase;
+        line-height: 51px;
+        border: 1px solid #fff;
+        border-radius: 10px;
+        color: #fff;
+        padding: 0 32px;
+        transition: all 0.3s ease;
+        z-index: 10;
+
+        &:hover {
+            color: #0F0F0F;
+            background-color: white;
+        }
+    }
+
+    a.appl {
+        @media (max-width: 1023px) {
+            pointer-events: none;
+        }
+
+
+    }
+
+    &.active {
+        a.appl {
+            pointer-events: all;
+        }
+    }
+}
+
+.int__pic {
+    height: 239px;
+    object-fit: cover;
+    width: 100%;
+
+    @media (max-width: 1023px) {
+        height: 209px;
+        width: 100%;
+    }
+}
+
+.int__name {
+    font-size: 18px;
+    font-weight: 500;
+
+    @media (max-width: 1365px) {
+        font-size: 16px;
+    }
+}

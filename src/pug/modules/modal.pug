@@ -1,0 +1,16 @@
+.modal.overlay 
+    .modal__wrapper 
+        button.modal__close
+        h2.modal__title Оставить заявку
+        form.modal__form
+            input(type="text" placeholder="ИМЯ")
+            input(type="phone" placeholder="+ 7 (999) 999 99 99").phone-mask
+            .modal__assent
+                input(type="checkbox" id="check-assent")
+                label(for="check-assent") Я принимаю условия пользовательского соглашения и условия обработки персональных данных
+            input(type="submit" value="Отправить").btn-default.btn-default--black
+
+    //- .modal__wrapper.modal__wrapper--center
+    //-     .modal__close
+    //-     p Заявка №12345 успешно создана, МЕНЕДЖЕР СВЯЖЕТСЯ В ВАМИ В БЛИЖАЙШЕЕ ВРЕМЯ
+    //-     a(href="").btn-default.btn-default--black В меню 

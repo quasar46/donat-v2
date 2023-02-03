@@ -1,0 +1,54 @@
+.tabs__item {
+    position: relative;
+    background-color: transparent;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #0F0F0F50;
+    padding-bottom: 10px;
+    font-weight: 500;
+    font-size: 18px;
+
+    &.active {
+        color: #0F0F0F;
+        border-bottom: 2px solid $color-black;
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 23px;
+            height: 32px;
+            background-image: url("../img/svg/arrow-down.svg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            top: calc(100% + 10px);
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    @media (max-width: 1365px) {
+        font-size: 16px;
+    }
+}
+
+.tabs {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    -ms-overflow-style: none;
+    /* IE и Edge */
+    scrollbar-width: none;
+
+    /* Firefox */
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    @media (max-width: 1023px) {
+        width: 100%;
+        padding-bottom: 40px;
+        overflow: auto;
+        margin-bottom: 32px;
+    }
+}

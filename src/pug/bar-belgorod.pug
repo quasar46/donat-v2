@@ -1,0 +1,35 @@
+doctype html
+html(lang="ru")
+    include modules/head
+    body
+        .wrapper
+            include modules/header
+            .page._container
+                .content 
+                    .content__header 
+                        h2.content__title Donut brew bar
+                    .content__tabs.tabs
+                        a.tabs__item(href="bar-kursk.html") Курск
+                        a.tabs__item.active(href="/") Белгород
+                    .content__wrapper.int 
+                        .int__item 
+                            figure
+                                img.int__pic(src="img/int/7.jpg" alt="")
+                                .int__overlay
+                                    a(href="")  3D ТУР
+                                    a(href="")  МЕНЮ
+                            span.int__name УЛ. 50-ЛЕТИЯ БЕЛГОРОДСКОЙ ОБЛАСТИ 8А
+                        .int__item 
+                            figure
+                                img.int__pic(src="img/int/8.jpg" alt="")
+                                .int__overlay
+                                    a(href="")  3D ТУР
+                                    a(href="")  МЕНЮ
+                            span.int__name ПРОСПЕКТ СЛАВЫ 65/36
+
+
+
+
+
+    include modules/footer
+    include modules/script

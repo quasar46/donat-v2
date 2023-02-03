@@ -1,0 +1,72 @@
+.header__wrapper {
+    height: 130px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+
+    @media (max-width: 1919px) {
+        height: 120px;
+    }
+
+    @media (max-width: 1365px) {
+        height: 105px;
+    }
+
+    @media (max-width: 1023px) {
+        height: 92px;
+    }
+}
+
+.header__nav {
+    margin: 0 auto;
+
+    @media (max-width: 1365px) {
+        display: none;
+
+        &.active {
+            display: block;
+        }
+    }
+}
+
+.header__logo {
+    max-width: 110px;
+    flex: 1 0 auto;
+
+    @media (max-width: 1919px) {
+        max-width: 100px;
+    }
+
+    @media (max-width: 1365px) {
+        max-width: 80px;
+    }
+
+    @media (max-width: 1023px) {
+        max-width: 75px;
+    }
+}
+
+.header__burger {
+    background-color: transparent;
+    display: none;
+    position: relative;
+    z-index: 100;
+    width: 28px;
+    height: 28px;
+    background-image: url("../img/svg/burger.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+
+    @media (max-width: 1365px) {
+        display: block;
+    }
+
+    &.active {
+        background-image: url("../img/svg/radix-icons_cross-2.svg");
+    }
+}

@@ -1,0 +1,49 @@
+doctype html
+html(lang="ru")
+    include modules/head
+    body
+        .wrapper
+            include modules/header
+            .page.contacts._container
+                .content 
+                    .content__header
+                        h2.content__title Контакты
+                    .contacts__wrapper  
+                        .contacts__col
+                            .content__tabs.tabs
+                                a.tabs__item.active Курск
+                                a.tabs__item(href="contacts.html") Белгород
+                            .contacts__list 
+                                ul 
+                                    li
+                                        img(src="img/svg/gg_pin.svg" alt="")
+                                        span УЛ. ЛЕНИНА 20
+                                    li
+                                        img(src="img/svg/ph_phone.svg" alt="")
+                                        a(href="tel:+79207177808") +7 (920) 717 78 08
+                                    li
+                                        img(src="img/svg/icon-park-outline_time.svg" alt="")
+                                        div
+                                            span Вс-чт 10:00-20:00
+                                            span Пт-сб 10:00-21:00
+                                    li
+                                        img(src="img/svg/tabler_mail.svg" alt="")
+                                        a(href="mailto:mail@donutbrew.ru") mail@donutbrew.ru
+                                    li
+                                        a(href="" taget="_blank")
+                                            img(src="img/svg/mdi_instagram.svg" alt="")
+                                        a(href="" taget="_blank")
+                                            img(src="img/svg/tabler_brand-vk.svg" alt="")
+                                        a(href="" taget="_blank")
+                                            img(src="img/svg/tabler_brand-facebook.svg" alt="")
+
+                        .contacts__map#map
+                            //- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2470.908301879204!2d36.188170938056366!3d51.73471253686669!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x412f0359a1573987%3A0xba8c928fa4051039!2sDonut%20bar!5e0!3m2!1sru!2sru!4v1673952349239!5m2!1sru!2sru" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+
+    include modules/footer
+    include modules/script
+    //- <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript")
+    <script src="js/placemark.js"></script>

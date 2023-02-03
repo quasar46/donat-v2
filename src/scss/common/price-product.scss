@@ -1,0 +1,44 @@
+.price-product {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+
+    @media (max-width: 1919px) {
+        gap: 10px;
+    }
+}
+
+.price-product__item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 500;
+
+    button {
+        height: 43px;
+        background-color: transparent;
+        border-radius: 10px;
+        border: 1px solid #0f0f0f;
+        padding: 0 20px;
+        cursor: pointer;
+        font-weight: 500;
+
+        span {
+            font-family: "GothamProRMedium";
+            font-style: normal;
+            font-size: 15px;
+        }
+
+        @media (max-width: 1023px) {
+            height: 39px;
+        }
+    }
+
+    span {
+        font-size: 14px;
+
+    }
+}
